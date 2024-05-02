@@ -122,9 +122,10 @@ body{
     position: absolute;
     top: 50%;
     width: 350px;
-    left: 50px;
+    left: 20%;
 
     transition: top 1s;
+    transition-delay: 100ms;
 }
 .main_container .home .info_container .firstP{
     font-size: 4rem;
@@ -142,6 +143,86 @@ body{
     background-color: rgba(245, 222, 179, 0);
     border: 1px solid black;
     border-radius: 5px;
+}
+.main_container .about{
+    padding-left: 10px;
+}
+
+.main_container .about h4{
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+.main_container .about h2{
+    margin-bottom: 30px;
+}
+.main_container .about p{
+    margin-bottom: 20px;
+    text-align: left;
+}
+.main_container .about .box_s2_container{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.main_container .about .box_s2_container .box_s2{
+    border-bottom: 3px solid black;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.166);
+    width: 200px;
+    height: 150px;
+    font-size: 1.5rem;
+    opacity: 0;
+}
+.main_container .about .box_s2_container .box_s2 p{
+    margin-left: 30px;
+}
+.main_container .about .box_s2_container .box_s2 p:first-child{
+    margin-top: 20px;
+    font-size: 2rem;
+    
+}
+
+.main_container .about .box_s2_container .box_one{
+    transform: translate(-55px, 0px);
+    transition: transform 1s, opacity 1s;
+    transition-delay: 100ms;
+}
+.main_container .about .box_s2_container .box_two{
+    transform: translate(0, -55px);
+    transition: transform 1s, opacity 1s;
+    transition-delay: 100ms;
+}
+.main_container .about .box_s2_container .box_three{
+    transform: translate(0, 55px);
+    transition: transform 1s, opacity 1s;
+    transition-delay: 100ms;
+}
+.main_container .about .box_s2_container .box_four{
+    transform: translate(45px, 0px);
+    transition: transform 1s, opacity 1s;
+    transition-delay: 100ms;
+}
+.main_container .about .announce_container{
+    width: 100%;
+    margin-top: 50px;
+    padding: 50px;
+    background-color: burlywood;
+    opacity: 0;
+
+    transform: translate(0, 100px);
+    transition: transform 1s, opacity 1s;
+}
+.main_container .about .announce_container p{
+    font-size: 3rem;
+}
+.main_container .about .announce_container button{
+    width: 150px;
+    height: 50px;
+    background-color: rgba(240, 248, 255, 0);
+    border: 1px solid black;
+    margin-top: 20px;
 }
 
 .hidden{
